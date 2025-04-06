@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: auto; /* Permite que o site cresça conforme o conteúdo */
+    overflow-x: hidden; /* Remove apenas a rolagem horizontal */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: linear-gradient(135deg, #1e1e1e, #121212); /* Fundo com gradiente */
+    position: relative;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo semitransparente para o cabeçalho */
+    color: #ff7b00;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo no cabeçalho */
+    align-items: center; /* Alinha verticalmente a logo e o título */
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao cabeçalho */
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Alinha o título e a logo verticalmente */
+    align-items: center;
+    gap: 10px;
+}
+
+.site-title {
+    font-size: 3rem; /* Tamanho maior para o título do site */
+    font-weight: bold;
+    text-align: center;
+    color: #ff7b00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto */
+}
+
+.logo {
+    width: 120px; /* Tamanho da logo */
+    height: 120px;
+    border-radius: 50%; /* Deixa a logo circular */
+    border: 2px solid #ff7b00; /* Adiciona uma borda ao redor da logo */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #ff6f00;
+}
+
+.categorias {
+    text-align: center;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.categorias h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ff6f00;
+}
+
+.categoria-lista {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.categoria-lista button {
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.categoria-lista button:hover {
+    background-color: #e65100;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #ff7b00;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+    letter-spacing: 2px; /* Adiciona espaçamento entre as letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto */
+}
+
+.card {
+    background: rgba(26, 26, 26, 0.9); /* Fundo escuro com transparência */
+    border: 1px solid #333;
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img, .card video {
+    width: 100%;
+    border-radius: 12px; /* Bordas arredondadas para imagens e vídeos */
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra para imagens e vídeos */
+}
+
+.card h2, .card h3 {
+    font-size: 1.5rem;
+    color: #ff7b00;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adiciona contraste ao texto */
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.card span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #27ae60;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background: #ff7b00;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover {
+    background: #e66a00;
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta levemente o card ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
+}
+
+/* Estilo para os vídeos no layout vertical */
+.card.video-card {
+    width: 300px; /* Largura do card */
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: flex-start; /* Garante que o conteúdo comece do topo */
+    gap: 10px; /* Espaçamento entre o título, vídeo e descrição */
+}
+
+.card.video-card video {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente */
+    border-radius: 8px;
+    object-fit: cover; /* Garante que o vídeo preencha o espaço */
+}
+
+.card.video-card h2 {
+    font-size: 1.5rem;
+    color: #ff7b00;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adiciona contraste ao texto */
+}
+
+.card.video-card p {
+    font-size: 0.9rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adiciona contraste ao texto */
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo semitransparente para o rodapé */
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 20px;
+    z-index: 1;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5); /* Sombra no topo do rodapé */
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+footer a {
+    color: #ff7b00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card.video-card {
+        width: 100%; /* Ajusta a largura dos vídeos para telas menores */
+        height: auto; /* Permite que a altura seja ajustada automaticamente */
+    }
+}
