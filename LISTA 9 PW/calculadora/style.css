@@ -1,0 +1,95 @@
+body {
+    background-color: #2c2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .calculadora {
+    background-color: #1d1b1b;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-rows: 80px auto;
+    gap: 20px;
+    width: 300px;
+  }
+
+  .display {
+    background-color: #d0cdcd;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: right;
+    line-height: 60px;
+    overflow: hidden;
+  }
+
+  .botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  button {
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    transition: background 0.2s;
+  }
+
+  button:hover {
+    background-color: #aaa8a8;
+  }
+
+  .ac {
+    background-color: #720616;
+  }
+
+  .ac:hover{
+    background-color: #c0021e;
+
+  }
+
+  .delete {
+    background-color: #720616;
+  }
+
+  .delete:hover{
+    background-color: #ca0623;
+
+  }
+
+  .igual {
+    background-color: #035008;
+  }
+
+  .igual:hover{
+    background-color:#2fc436;
+  }
+
+  .azul {
+    background-color: #104c6a;
+  }
+
+  .azul:hover {
+    background-color: #0b3246;
+  }
+
+  .operador {
+    background-color: #104c6a;
+  }
+
+  .operador:hover{
+    background-color: #0a2736;
+
+  }
